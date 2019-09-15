@@ -2,71 +2,132 @@ html{
     box-sizing: border-box;
 }
 
-@media only screen and (min-width: 576px)  {
-    [class*="col-"] {
-        width: 100%;
-        
-      }
-}
-
-@media only screen and (max-width: 768px) {
-    [class*="col-"] {
-      width: 100%;
-      
-    }
-  }
-
-  @media only screen and (max-width: 992px) {
-    [class*="col-"] {
-      width: 100%;
-      
-    }
-  }
-
-*, 
-*:before, 
-*:after {
-  box-sizing: inherit;
-}
-
-[class*="col-"]{
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    background-color: aqua;
-}
-
-.container{
-	width: 100%;
-	max-width: 1000px;
-	margin: 0 auto;
-	float: none;
-    background-color: #fff;
-    border:1px solid red;
-}
-
-.col-sm-1{
-    flex:0 1 49%;
+  .col-1{
     background-color: rgb(216, 141, 42);
 }
 
-.col-sm-2{
+.col-2{
+    background-color: yellow;
+    min-height: 300px;
+}
+
+.col-3{
+    background-color: blue;
+}
+
+.col-4{
+    background-color: darkgrey;
+}
+
+[class*="col-"]{
+  margin: 1% 1% 1% 1%;
+  height: 100px;
+  flex:0 1 98%;
+}
+
+.row{
+  display: flex;
+  flex-flow: row wrap;
+}
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	float: none;
+  background-color: #fff;
+  border:1px solid red;
+}
+
+  
+
+
+
+@media (min-width: 768px) {
+  .col-1{
+    flex:0 1 98%;
+    background-color: rgb(218, 3, 3);
+}
+
+.col-2{
     flex: 0 1 98%;
     background-color: yellow;
     min-height: 300px;
 }
 
 .col-3{
-    flex: 0 1 32%;
+    flex: 0 1 98%;
     background-color: blue;
 }
 
 .col-4{
-    flex: 0 1 23%;
+    flex: 0 1 48%;
     background-color: darkgrey;
 }
 
-.row{
-	display: flex;
+[class*="col-"]{
+  margin: 1% 1% 1% 1%;
+  height: 100px;
 }
+.row{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	float: none;
+  background-color: #fff;
+  border:1px solid red;
+}
+  }
+
+
+
+@media (min-width: 992px) {
+      .col-1{
+        flex:0 1 48%;
+        background-color: rgb(216, 141, 42);
+    }
+    
+    .col-2{
+        flex: 0 1 98%;
+        background-color: yellow;
+        min-height: 300px;
+    }
+    
+    .col-3{
+        flex: 0 1 31.3%;
+        background-color: blue;
+    }
+    
+    .col-4{
+        flex: 0 1 23%;
+        background-color: darkgrey;
+    }
+
+    [class*="col-"]{
+      margin: 1% 1% 1% 1%;
+      height: 100px;
+  }
+  .row{
+    display: flex;
+    flex-flow: wrap row;
+  }
+
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    float: none;
+    background-color: #fff;
+    border:1px solid red;
+  }
+}
+
+
+
+
+
+
